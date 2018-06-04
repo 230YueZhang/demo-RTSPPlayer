@@ -77,7 +77,7 @@ public class VideoWithContentActivity extends AppCompatActivity {
                 .setUrl(url)
                 .setCacheWithPlay(cache)
                 .setVideoTitle("测试视频")
-                .setIsBottomVisible(false)
+                .isRealTimeStream(true)
                 .setVideoAllCallBack(new GSYSampleCallBack() {
                     @Override
                     public void onPrepared(String url, Object... objects) {

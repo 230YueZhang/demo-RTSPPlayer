@@ -262,11 +262,23 @@ public class GSYVideoOptionBuilder {
 
     /**
      * 设置播放底部的进度条、时间、全屏控件不可见
+     *
      * @param visible
      * @return
      */
-    public GSYVideoOptionBuilder setIsBottomVisible(boolean visible){
+    public GSYVideoOptionBuilder setIsBottomVisible(boolean visible) {
         this.mBottomVisible = visible;
+        return this;
+    }
+
+    /**
+     * 资源是否是实时流
+     *
+     * @param isRealTime
+     * @return
+     */
+    public GSYVideoOptionBuilder isRealTimeStream(boolean isRealTime) {
+        setIsBottomVisible(!isRealTime);
         return this;
     }
 

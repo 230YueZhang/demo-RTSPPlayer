@@ -930,6 +930,10 @@ public abstract class GSYBaseVideoPlayer extends GSYVideoControlView {
         this.mAutoFullWithSize = autoFullWithSize;
     }
 
+    /**
+     *  @author ZhangYue
+     *  @time 2018/6/4  15:19
+     */
     public void setBottomVisible(boolean bottomVisible) {
         mBottomVisibility = bottomVisible;
     }
