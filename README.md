@@ -1,2 +1,3 @@
-#demo-RTSPPlayer
-本demo主要提供两个播放页，RTSP视频详情的播放页和同时播放多个RTSP串的播放列表页。其中RTSPPlayer播放核心部分摘自郭大喵的https://github.com/CarGuo/GSYVideoPlayer，针对RTSP这种实时流做了一些“私人化的定制”（demo中的RTSP流来自互联网，如不可用需要自行更换）可以手动设置播放的流媒体类型
+本demo主要提供三个播放页，一个是正常播放HTTP视频流、还有RTSP视频详情的播放页和同时播放多个RTSP串的播放列表页。
+其中RTSPPlayer播放核心部分摘自郭大喵的https://github.com/CarGuo/GSYVideoPlayer
+主要针对RTSP这种实时流做了一些“私人化的定制”（demo中的RTSP流来自互联网，如不可用需要自行更换）可以手动设置播放的流媒体类型。
