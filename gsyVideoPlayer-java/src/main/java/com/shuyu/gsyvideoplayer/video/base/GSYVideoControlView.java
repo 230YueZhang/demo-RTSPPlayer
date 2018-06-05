@@ -274,13 +274,6 @@ public abstract class GSYVideoControlView extends GSYVideoView implements View.O
 
 
         mSeekEndOffset = CommonUtil.dip2px(getActivityContext(), 50);
-
-
-        /**
-         *  @author ZhangYue
-         *  @time 2018/5/21  14:23
-         */
-        setBottomMenuVisibility(mBottomVisibility);
     }
 
     @Override
@@ -636,6 +629,11 @@ public abstract class GSYVideoControlView extends GSYVideoView implements View.O
                     mTitle);
         }
         super.prepareVideo();
+        /**
+         *  @author ZhangYue
+         *  @time 2018/5/21  14:23
+         */
+        setBottomMenuVisibility(mBottomVisibility);
     }
 
     protected void touchSurfaceDown(float x, float y) {
@@ -765,8 +763,8 @@ public abstract class GSYVideoControlView extends GSYVideoView implements View.O
      * @param mBottomVisibility
      */
     /**
-     *  @author ZhangYue
-     *  @time 2018/5/21  14:23
+     * @author ZhangYue
+     * @time 2018/5/21  14:23
      */
     protected void setBottomMenuVisibility(boolean mBottomVisibility) {
         mBottomProgressBar.setVisibility(mBottomVisibility ? VISIBLE : INVISIBLE);

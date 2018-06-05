@@ -21,10 +21,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- *  @author ZhangYue
- *  @time 2018/6/1  16:05
+ * @author ZhangYue
+ * @project customDemo
+ * @createdTime 2018/6/4  15:37
  */
-public class VideoWithContentActivity extends AppCompatActivity {
+public class HttpVideoPlayActivity extends AppCompatActivity {
 
     @BindView(R.id.post_detail_nested_scroll)
     NestedScrollView postDetailNestedScroll;
@@ -52,7 +53,7 @@ public class VideoWithContentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_videowithcontent);
         ButterKnife.bind(this);
 
-        url = "rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov";
+        url = "http://9890.vod.myqcloud.com/9890_4e292f9a3dd011e6b4078980237cc3d3.f20.mp4";
 
         //增加封面
         ImageView imageView = new ImageView(this);
@@ -77,7 +78,7 @@ public class VideoWithContentActivity extends AppCompatActivity {
                 .setUrl(url)
                 .setCacheWithPlay(cache)
                 .setVideoTitle("测试视频")
-                .isRealTimeStream(true)
+                .isRealTimeStream(false)
                 .setVideoAllCallBack(new GSYSampleCallBack() {
                     @Override
                     public void onPrepared(String url, Object... objects) {
@@ -104,7 +105,7 @@ public class VideoWithContentActivity extends AppCompatActivity {
                 orientationUtils.resolveByClick();
 
                 //第一个true是否需要隐藏actionbar，第二个true是否需要隐藏statusbar
-                detailPlayer.startWindowFullscreen(VideoWithContentActivity.this, true, true);
+                detailPlayer.startWindowFullscreen(HttpVideoPlayActivity.this, true, true);
             }
         });
 
@@ -196,3 +197,4 @@ public class VideoWithContentActivity extends AppCompatActivity {
     }
 
 }
+

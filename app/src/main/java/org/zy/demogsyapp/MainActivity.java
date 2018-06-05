@@ -26,4 +26,8 @@ public class MainActivity extends AppCompatActivity {
     public void openRTSPMutiListActivity(View view) {
         startActivity(new Intent(this, RecyclerViewActivity.class));
     }
+
+    public void openHTTPDetailActivity(View view) {
+        startActivity(new Intent(this, HttpVideoPlayActivity.class));
+    }
 }
